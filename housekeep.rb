@@ -66,8 +66,7 @@ def write_log (log, message)
 	return processed
 end
 
-logfile = '/Users/steve/Dropbox/housekeep-' + Socket.gethostname.downcase + '.log'
-
+logfile = "/Users/steve/Library/Mobile Documents/com~apple~CloudDocs/Logs/housekeep-" + Socket.gethostname.downcase + ".log"
 write_log(logfile,  "STARTED: #{source}" + "\n")
 				
 Dir.foreach (source) do |i|
